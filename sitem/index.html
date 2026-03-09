@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico?v=3" >
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<link href="https://onemorestory.neocities.org/style.css" rel="stylesheet" />
+
+<style>
+
+
+
+
+</style>
+</head>
+
+
+<body>
+  
+  
+ <header  style="margin:0; padding:0;height:200px; top:0; position:relative; width:100%; background: url(https://onemorestory.neocities.org/images/head-banner.png)  repeat-x top center,url(https://media.tumblr.com/44e761bb38170bf025a449905eeded74/tumblr_inline_mo56ltsQWw1qz4rgp.gif) repeat-x 200px 175px; " >
+ <div style="width:100%; background: url(https://onemorestory.neocities.org/images/top-bar.gif)  repeat-x top center; height:21px; display:block"> </div>
+ 
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="175" viewBox="0 0 2000 175">
+  <defs>
+    <!-- Dolgu gradyanı -->
+    <linearGradient id="fillGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF9CF3"/>
+      <stop offset="55%" stop-color="#C86BFF"/>
+      <stop offset="100%" stop-color="#FF9CF3"/>
+    </linearGradient> 
+    <!-- Stroke gradyanı -->
+    <linearGradient id="strokeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF9CF3"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#C86BFF"/>
+    </linearGradient> 
+    <!-- Neon bloom (siyah yok, gölge yok) -->
+    <filter id="neonBloom" x="-60%" y="-250%" width="220%" height="600%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="b1">
+        <animate attributeName="stdDeviation" values="4;10;4" dur="1.6s" repeatCount="indefinite"/>
+      </feGaussianBlur> 
+      <feColorMatrix in="b1" type="matrix"
+        values="1 0 0 0 0
+                0 0.35 0 0 0
+                0 0 1 0 0
+                0 0 0 1 0" result="t1"/> 
+      <feGaussianBlur in="t1" stdDeviation="14" result="b2">
+        <animate attributeName="stdDeviation" values="10;20;10" dur="1.6s" repeatCount="indefinite"/>
+      </feGaussianBlur> 
+      <feComponentTransfer in="b2" result="b2a">
+        <feFuncA type="table" tableValues="0.15 0.6"/>
+      </feComponentTransfer> 
+      <feMerge> 
+        <feMergeNode in="t1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs> 
+  <!-- Şeffaf arka plan -->
+  <rect width="2000" height="175" fill="transparent"/> 
+  <!-- Yazı -->
+  <g transform="translate(1000 115) skewX(-10) scale(1.25 1)">
+    <!-- Işık saçan katman -->
+    <text
+      x="0" y="0"
+      text-anchor="middle"  
+      letter-spacing="4"
+   font-weight="bold"
+      dominant-baseline="middle"
+      font-family="Great Vibes, cursive"
+      font-size="100"
+      fill="none"
+      stroke="url(#strokeGrad)"
+      stroke-width="2"
+      stroke-linejoin="round"
+      opacity="0.85"
+      filter="url(#neonBloom)"
+    >
+      One MORE Story
+      <animate attributeName="opacity" values="0.55;0.95;0.55" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-width" values="8;12;8" dur="1.6s" repeatCount="indefinite"/>
+    </text> 
+    <!-- Ana gövde -->
+    <text
+      x="0" y="0"
+      text-anchor="middle"
+      letter-spacing="4"  
+  font-weight="bold"
+      dominant-baseline="middle"  
+      font-family="Great Vibes, cursive"
+      font-size="100"
+      fill="url(#fillGrad)"
+      stroke="rgba(255,255,255,0.35)"
+      stroke-width="1"
+      paint-order="stroke fill"
+    >
+      One MORE Story
+    </text>
+  </g>
+</svg>
+
+
+<div style="position:absolute;left:5px;top:15px"><img src="https://media.tumblr.com/532bafbd3762e27068525ddf928f77b2/tumblr_inline_mqlzb1UHeh1qz4rgp.gif"></div>
+</header>
+
+
+
+<div class="position-relative">
+ <button  class="btn-close btn-close-white position-absolute top-0 start-0 m-2" onclick="this.parentElement.remove()"></button>
+<div  style="background: radial-gradient(circle at top,#2b0036 0%, #0b0014 60%,#000000 100%); height:60px; ">
+<marquee scrollamount="10">
+<p style="font-family: 'Parisienne'; font-size: 44px; color:#ffe6f2; text-shadow: 3px 3px 1px rgba(255, 0, 187, 0.6);">  
+It's my personel manifesto. This website has a message of self-discovery, self-love and happiness. You will find insights into my interests, the areas I am passionate about, as well as the dislikes.This website also serves as a space to reflect my ongoing development journey. I believe that growth is a continuous process, shaped by experience, learning, and self-awareness. 
+&nbsp;&nbsp;&nbsp;&nbsp;+ My tumblr is <a href="https://onemorestory.tumblr.com//" target="_blank">One More Story</a>. Thank you for your interest.</p></marquee>
+</div>
+</div>
+
+
+
+<article id="container1" class="container">
+<div class="row">
+
+<div class="col-md-3 bg-dark bg-opacity-50 text-light p-3">
+<h2 class="welcome-logo parisienne">
+  <span class="well">Well</span><span class="come">come</span>
+</h2>
+
+
+
+<div class=" fs-5" data-has-dropcap>
+Whether you've wandered here intentionally or stumbled upon it by accident, you’ve arrived at <b>OneMoreStory.</b>
+Through this platform, I aim to share that perspective in a clear, structured, and authentic way.
+Here, we explore what I value, what I seek, and what I choose to avoid.
+</div>
+ 
+
+
+<div class="emoji-strip">
+  <span>🌈</span>
+  <span>✨</span>
+  <span>💖</span>
+  <span>🌙</span>
+  <span>🦋</span>
+  <span>🌸</span>
+  <span>⭐</span>
+  <span>☁️</span>
+</div>
+
+    <nav aria-label="site navigation">
+        <ul>
+          <li><a href="/">🏠 Home <span class="badge">start</span></a></li>
+          <li><a href="https://onemorestory.neocities.org/likes-dislikes.html">💖 What I like & dislike? <span class="badge">vibe</span></a></li>
+          <li><a href="https://onemorestory.neocities.org/favourite/performers.html">🧁 Fav Performers <span class="badge">Show</span></a></li>
+          <li><a href="https://onemorestory.neocities.org/favourite/philosophers.htmş">🌸 Fav philosophers <span class="badge">Intellegence</span></a></li>
+        </ul>
+      </nav>
+
+
+  
+ 
+  <div class="jukebox">
+ <button class="activate"><img src="https://starry-knight.neocities.org/images/img-green-radio.gif"></button>
+  <ul>
+    <li><button onclick="stopmusic()" >stop music</button></li>
+      <li><button value="0" onclick="playsong()">Old Doll
+     <audio ><source src="https://file.garden/aX3UWwqEQ1TtZMA-/Old%20Doll%20-%20Soft%20Version.mp3" type="audio/mp3"></audio>
+   </button></li>
+   <li><button value="1" onclick="playsong()">He is So Clumsy
+     <audio ><source src="https://file.garden/aX3UWwqEQ1TtZMA-/Yasak%20Elma%20-%20Hasan%20Ali.mp3" type="audio/mp3"></audio>
+   </button></li>
+   <li><button value="2" onclick="playsong()">Whatever U Say It's all inside
+     <audio ><source src="https://file.garden/aX3UWwqEQ1TtZMA-/Kalp%20Agrisi.mp3" type="audio/mp3"></audio>
+   </button></li>
+   <li><button value="3" onclick="playsong()"> I could reach it someday
+     <audio ><source src="https://file.garden/aX3UWwqEQ1TtZMA-/O%20Hayat%20Benim%20-%20Uzaklar.mp3" type="audio/mp3"></audio>
+   </button></li>
+   <li><button value="4" onclick="playsong()">He is sadly in love
+     <audio><source src="https://file.garden/aX3UWwqEQ1TtZMA-/Kad%C4%B1n%20Orijinal%20Dizi%20M%C3%BCzikleri%20-%20Gar.mp3" type="audio/mp3"></audio>
+   </button></li>
+  </ul>
+</div> 
+  
+
+<br>
+<div class="useful1">
+        <strong>Useful links</strong>
+        <ul style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+        
+        
+        
+        <li><a href="https://yarn.co/" target="_blank"> Make video Emoji </a></li>
+        <li><a href="https://www.tvguide.com/" target="_blank"> Tv Guide </a></li>
+          <li><a href="Horsemen.nl" target="_blank"> HorseMan Party</a></li>
+          <li><a href="https://substack.com/" target="_blank"> SubStack ur news</a></li>
+          <li><a href="https://www.gay-news.com/" target="_blank"> Gay News</a></li>
+          
+        </ul>
+      </div>
+ </div>
+
+
+
+            
+
+
+
+
+<div id="container-inner" class="col-md-9 bg-dark bg-opacity-50 text-light p-3">
+  <div class="row  g-3">
+ 
+ 
+
+<div class="vibe-wrap">
+<div class="vibe-line top"></div>
+<h4 class="neon glitch" data-text="HERE’S MY VIBE!🐈">HERE’S MY VIBE!🐈</h4>
+<div class="vibe-line bottom"></div>
+
+
+
+ <style>
+ 
+.glass-card {
+  position: relative;
+  height: 100%; 
+  border-radius: 22px;
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  color: #fff;
+  padding: 14px 0;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-right: 1px solid rgba(255,255,255,0.6);
+  
+  border-bottom: 1px solid rgba(255,255,255,0.8);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.15);
+  
+}
+
+
+ 
+.glass-card span {
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-title {
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.love { color: #ffb6c1; }
+.complicated { color: #c3b1ff; }
+.dislike { color: #ff9999; }
+
+/* Floating animation */
+.float-card {
+  animation: float 4s ease-in-out infinite;
+}
+
+.delay-1 { animation-delay: .5s; }
+.delay-2 { animation-delay: 1s; }
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* Hover drama */
+.glass-card:hover {
+  transform: scale(1.04);
+  transition: 0.4s ease;
+}
+
+</style>
+
+
+<!-- LIKES AND DISLIKES -->
+<div class="container py-5">
+
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">         
+<h3 class="glow-title come ">My Likes & Dislikes</h3> 
+<span class="badge text-bg-secondary rounded-pill px-3 py-2">
+<i class="bi bi-stars me-1"></i> <a href="https://onemorestory.neocities.org/likes-dislikes.html">Detay</a>
+</span>
+</div>
+
+  <div class="row g-4 justify-content-center">
+
+    <!-- I LOVE -->
+    <div class="col-md-4">
+      <div class="card glass-card float-card">
+        <h2 class="card-title love">❤️I Love    </h2>
+        <p><span>Sunny weather</span> – Sun is life.</p>
+        <p><span>Quietness</span> – It’s not exist.</p>
+        <p><span>Games</span> – Disney Dreamlight Valley, Far Cry, Tomb Raider</p>
+        <p><span>Music</span> – Melancholy ambient, Chill, Soul, Slow Instrumental</p>
+        <p><span>Kindness & honest</span> people</p>
+      </div>
+    </div>
+
+
+    <!-- COMPLICATED -->
+    <div class="col-md-4">
+      <div class="card glass-card float-card delay-1" style=" ">
+        <h2 class="card-title complicated">🌀It’s Complicated</h2>
+        <p><span>Lost in overthinking</span> the tough times I’ve lived through.</p>
+        <p><span>Speaking out loud</span> while asking God or mother for help and realizing that others notice it, fills me with embarrassment.</p>
+        <p><span>Social situations</span> make me uncomfortable, and I hide it by pretending to be okay.</p>
+      </div>
+    </div>
+
+
+    <!-- DISLIKE -->
+    <div class="col-md-4">
+      <div class="card glass-card float-card delay-2">
+        <h2 class="card-title dislike">🚫 I Dislike</h2>
+        <p><span>People</span> whose anger speaks.</p>
+        <p><span>Wearing clothes</span> that don’t reflect me.</p>
+        <p><span>Conversations</span> about politics and sports.</p>
+        <p><span>Struggling to sleep</span> when alone.</p>
+        <p><span>The food</span> I cooked is nothing like the meal I had imagined.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="color-line"></div>
+ 
+
+ <!-- phılophers -->
+<div class="container py-5">
+<div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">         
+<h3 class="glow-title come poppins">Philosophers</h3> 
+<span class="badge text-bg-secondary rounded-pill px-3 py-2">
+<i class="bi bi-stars me-1"></i> <a href="https://onemorestory.neocities.org/favourite/philosophers">Detay</a>
+</span>
+</div>
+ 
+
+  <div class="row g-4 justify-content-center">
+<div class="col-md-4">
+  <section class="card img-fluid rounded-pill shadow w-75 mx-auto overflow-hidden"
+    style="height:220px; background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Plato_Silanion_Musei_Capitolini_MC1377.jpg/330px-Plato_Silanion_Musei_Capitolini_MC1377.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+      <br><br><br>
+        <h6>Platon </h6>
+      </div>
+     </div>
+    <div class="bg-mask"></div>
+  </section>
+  <div class="bg-dark  bg-opacity-75 text-white text-center py-1 rounded-3">
+   <p> <span>Platon</span><br> MÖ 428 - MÖ 348</p>
+</div>
+</div>
+
+<div class="col-md-4">
+  <section class="card img-fluid rounded-pill shadow w-75 mx-auto overflow-hidden"
+    style="height:220px; background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/250px-Aristotle_Altemps_Inv8575.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+      <br><br><br>
+        <h6>Aristoteles (Aristo) </h6>
+      </div>
+     </div>
+    <div class="bg-mask"></div>
+  </section>
+  <div class="bg-dark  bg-opacity-75 text-white text-center py-1 rounded-3">
+   <p> <span>Aristoteles (Aristo)</span><br> MÖ 384 – MÖ 322</p>
+</div>
+</div>
+
+<div class="col-md-4">
+  <section class="card img-fluid rounded-pill shadow w-75 mx-auto overflow-hidden"
+    style="height:220px; background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Socrates_Louvre.jpg/960px-Socrates_Louvre.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+      <br><br><br>
+        <h6>Sokrates </h6>
+      </div>
+     </div>
+    <div class="bg-mask"></div>
+  </section>
+  <div class="bg-dark bg-opacity-75 text-white text-center py-1 rounded-3">
+   <p> <span>Sokrates</span><br> MÖ 469 -	MÖ 399</p>
+</div>
+</div>
+
+ 
+ <div class="col-md-4">
+  <section class="card img-fluid rounded-pill shadow w-75 mx-auto overflow-hidden"
+    style="height:250px; background:url(https://upload.wikimedia.org/wikipedia/commons/7/73/Frans_Hals_-_Portret_van_Ren%C3%A9_Descartes.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+      <br><br><br>
+        <h6>René Descartes </h6>
+      </div>
+     </div>
+    <div class="bg-mask"></div>
+  </section>
+  <div class="bg-dark bg-opacity-75 text-white text-center py-1 rounded-3">
+   <p> <span>René Descartes (d eɪ k ɑːr t )</span><br> 31.03.1596 -	11.02.1650</p>
+</div>
+</div>
+
+   <div class="col-md-4">
+  <section class="card img-fluid rounded-pill shadow w-75 mx-auto overflow-hidden"
+    style="height:250px; background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Immanuel_Kant_-_Gemaelde_1.jpg/960px-Immanuel_Kant_-_Gemaelde_1.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+      <br><br><br>
+        <h6>Immanuel Kant</h6>
+      </div>
+     </div>
+    <div class="bg-mask"></div>
+  </section>
+  <div class="bg-dark bg-opacity-75 text-white text-center py-1 rounded-3">
+   <p> <span>Immanuel Kant</span><br>22.04.1724 - 12.02.1804</p>
+</div>
+</div>
+ 
+ 
+ <div class="col-md-4">
+  <section class="card img-fluid rounded-pill shadow w-75 mx-auto overflow-hidden"
+    style="height:250px; background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Arthur_Schopenhauer_by_J_Sch%C3%A4fer%2C_1859b.jpg/250px-Arthur_Schopenhauer_by_J_Sch%C3%A4fer%2C_1859b.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+      <br><br><br>
+        <h6>Arthur Schopenhauer</h6>
+      </div>
+     </div>
+    <div class="bg-mask"></div>
+  </section>
+  <div class="bg-dark bg-opacity-75 text-white text-center py-1 rounded-3">
+   <p> <span>Arthur Schopenhauer</span><br> 22.02.1788 - 21.09.1860</p>
+</div> <br> 
+</div>
+ 
+ </div> </div>
+<div class="cat-line"></div>
+
+
+
+ 
+  <!-- performers -->
+ <div class="container py-5">
+ <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">         
+<h3 class="glow-title come poppins">Fav Performers</h3> 
+<span class="badge text-bg-secondary rounded-pill px-3 py-2">
+<i class="bi bi-stars me-1"></i> <a href="https://onemorestory.neocities.org/favourite/performers">Detay</a>
+</span>
+</div>
+ 
+ 
+ 
+    <div class="row g-4 justify-content-center">
+
+
+ <div class="col-md-4">
+  <section class="card rounded-3 overflow-hidden"
+    style="height:340px; background:url(https://onemorestory.neocities.org/images/performers/AustinYoung.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+        <h3>Christopher Mckinley </h3>
+        <b class="fs-3">Austin Young</b>
+        <p class="m-0 lh-sm"> 20 January 1997  <br>Caucasian, Wilmington, North Carolina USA<br>157 cm, Eyes: Brown</p></div>
+      <div class="card-info d-flex justify-content-center"> 
+        <a class="btn btn-outline-light btn-sm" href="https://www.facebook.com/austin.young.3363/" target="_blank">FaceBook</a>
+      </div></div>
+    <div class="bg-mask"></div>
+  </section>
+</div>
+
+ 
+ <div class="col-md-4">
+  <section class="card rounded-3 overflow-hidden"
+    style="height:340px; background:url(https://onemorestory.neocities.org/images/performers/TyRoderick.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+       <h3>Anthony Aceto</h3>
+        <b class="fs-3" >Ty Roderick</b>
+        <p class="m-0 lh-sm">16 October 1987  <br>Caucasian, Maine USA<br>180 cm, Eyes: Brown	</p></div>
+      <div class="card-info d-flex justify-content-center">
+        <a class="btn btn-outline-light btn-sm" href="https://www.tyroderickx.net/" target="_blank">WebSite</a>
+        <a class="btn btn-outline-light btn-sm" href="https://www.instagram.com/tyroderickx/" target="_blank">Instagram</a>
+      </div></div>
+    <div class="bg-mask"></div>
+  </section>
+</div>
+
+ 
+ <div class="col-md-4">
+  <section class="card rounded-3 overflow-hidden"
+    style="height:340px; background:url(https://onemorestory.neocities.org/images/performers/jdPhoenix.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+        <h3>Daniel John Webb  </h3>
+        <b class="fs-3" >J.D. Phoenix </b>
+        <p class="m-0 lh-sm">04.08.1993 <br>Caucasian, Albany, New York, USA<br>178 cm, Blue eyes	</p></div>
+      <div class="card-info d-flex justify-content-center"> 
+        <a class="btn btn-outline-light btn-sm" href="https://www.instagram.com/jdphoenix13/" target="_blank">Instagram</a>
+      </div></div>
+    <div class="bg-mask"></div>
+  </section>
+</div>
+
+ 
+
+ <div class="col-md-4">
+  <section class="card rounded-3 overflow-hidden"
+    style="height:340px; background:url(https://onemorestory.neocities.org/images/performers/LegrandWolf.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+        <h3>Legrand Wolf</h3> 
+        <p class="m-0 lh-sm">13 May 1978 <br>White, USA<br>198cm, Blue eyes	</p></div>
+      <div class="card-info d-flex justify-content-center"> 
+        <a class="btn btn-outline-light btn-sm" href="https://www.instagram.com/legrandwolfreal/" target="_blank">Instagram</a>
+      </div></div>
+    <div class="bg-mask"></div>
+  </section>
+</div>
+
+ 
+
+ 
+      
+    
+    
+<div class="col-md-4">
+  <section class="card rounded-3 overflow-hidden"
+    style="height:340px; background:url(https://onemorestory.neocities.org/images/performers/Vadim_Black.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column">
+      <div class="titles text-white text-center">              
+      <h3>Luke Vadim Hiles</h3>
+        <b class="fs-3" >Vadim Black</b>
+        <p class="m-0 lh-sm">12 April 1995 <br> Moscow Russia-Lives USA - Green eyes - 170 cm </p></div>
+      <div class="card-info d-flex justify-content-center">
+        <a class="btn btn-outline-light btn-sm" href="https://www.instagram.com/vadimblack.official" target="_blank">Instagram</a>
+      </div></div>
+    <div class="bg-mask"></div>
+  </section>
+</div>
+    
+      
+  
+
+<div class="col-md-4">
+  <section class="card rounded-3 overflow-hidden"
+    style="height:340px; background:url(https://onemorestory.neocities.org/images/performers/Peto-Coast.png) center / 100% auto no-repeat;">
+   <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+       <h3>Peto Coast</h3>
+        <b class="fs-3" >Peto Coast</b>
+        <p class="m-0 lh-sm">24 May 1983 <br>Middelburg, Netherlands <br>191 cm, Eyes: Brown	</p></div>
+      <div class="card-info d-flex justify-content-center">
+        <a class="btn btn-outline-light btn-sm" href="https://www.tyroderickx.net/" target="_blank">WebSite</a>
+        <a class="btn btn-outline-light btn-sm" href="https://www.instagram.com/tyroderickx/" target="_blank">Instagram</a>
+      </div></div>
+    <div class="bg-mask"></div>
+  </section>
+</div>
+
+ 
+ </div> </div>
+<div class="color-line"></div>
+ 
+ 
+ 
+  </div>
+ 
+ 
+ 
+ 
+ 
+  <p> neurologist and the founder of psychoanalysis. </p>
+ 
+ 
+<div class="col-md-4">
+  <section class="card rounded-3 overflow-hidden"
+    style="height:340px; background:url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg/960px-Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg) center / 100% auto no-repeat;">
+    <div class="card-inner d-flex flex-column  ">
+      <div class="titles text-white text-center">
+        <h3>Sigmund FREUD  </h3>
+       
+        <p class="m-0 lh-sm">1856-1939</p></div>
+     </div>
+    <div class="bg-mask"></div>
+    
+ <h4>Sigmund FREUD (Freud)
+ </h4>
+  </section>
+</div>
+  
+ 
+ 
+ 
+  
+<div class="train-wrap"></div>
+ 
+ 
+
+</div> 
+</div>
+</div>
+</article>
+
+
+
+
+
+  
+
+
+
+
+
+<div class="footer bg-dark text-light border-top border-secondary shadow-sm">
+<div class="container  ">
+      <section class="cta">
+     
+      <a href="#join">Join the sparkle club &#10024;</a>
+      <div class="tiny">Bu sayfa “neon + sınır + sevgi” üçlüsünün ürünüdür. 🌈</div>
+    </section>
+  <h1 class="vibe-title">
+  If this feels like you, welcome! 
+    <span class="big-heart">💖</span>
+  </h1>
+<div>
+    <a href="https://cmbcoldspot.neocities.org/stickercollection" target="blank"><img src="/images/blinkies/a62.png" /> </a>
+    <img src="/images/blinkies/a35.png"> 
+    <img src="/images/blinkies/a56ff.png"> 
+    <img src="/images/blinkies/dap490v-955d37ec-ccaa-4fb0-a94a-f562487cdf80.png"> 
+    <img src="/images/blinkies/i14.png"> 
+    <img src="/images/blinkies/a41.gif">
+    <img src="/images/blinkies/a60.gif">
+    <img src="/images/blinkies/a64.gif">
+    <img src="/images/blinkies/b66.gif">
+    <img src="/images/blinkies/gaynerds.gif">
+    <img src="/images/blinkies/k40.gif">
+    <img src="/images/blinkies/sdsdsds.gif"> 
+    <img src="/images/blinkies/ssssssss.gif"> 
+    <img src="/images/blinkies/aq1.gif"> 
+    <img src="/images/blinkies/aq2.gif"> 
+    <img src="/images/blinkies/aq3.gif"> 
+    </div>
+
+
+<hr class="blink-hr opacity-50 ">
+
+<div>
+ <img src="/images/blinkies/text-blinkies/20.gif"> 
+ <img src="/images/blinkies/text-blinkies/k4.gif"> 
+ <img src="/images/blinkies/text-blinkies/e39.gif"> 
+ <img src="/images/blinkies/text-blinkies/n13.gif"> 
+ <img src="/images/blinkies/text-blinkies/v76.gif"> 
+ <img src="/images/blinkies/text-blinkies/61.gif"> 
+ <img src="/images/blinkies/text-blinkies/24.gif"> 
+ <img src="/images/blinkies/text-blinkies/a10.gif"> 
+ <img src="/images/blinkies/text-blinkies/b25.gif"> 
+ <img src="/images/blinkies/text-blinkies/b8.gif"> 
+ <img src="/images/blinkies/text-blinkies/d39.gif"> 
+ <img src="/images/blinkies/text-blinkies/e63.gif"> 
+ <img src="/images/blinkies/text-blinkies/e81.gif"> 
+ <img src="/images/blinkies/text-blinkies/v12.gif"> 
+ <img src="/images/blinkies/text-blinkies/v18.gif"> 
+ <img src="/images/blinkies/text-blinkies/f55.gif"> 
+ <img src="/images/blinkies/text-blinkies/f81.gif"> 
+ <img src="/images/blinkies/text-blinkies/g9.gif"> 
+ <img src="/images/blinkies/text-blinkies/g23.gif"> 
+ <img src="/images/blinkies/text-blinkies/g6.gif"> 
+ <img src="/images/blinkies/text-blinkies/g51.gif"> 
+ <img src="/images/blinkies/text-blinkies/g61.gif"> 
+ <img src="/images/blinkies/text-blinkies/g77.gif"> 
+ <img src="/images/blinkies/text-blinkies/g95.gif"> 
+ <img src="/images/blinkies/text-blinkies/g114.gif"> 
+ <img src="/images/blinkies/text-blinkies/g119.gif"> 
+ <img src="/images/blinkies/text-blinkies/s1.gif"> 
+ <img src="/images/blinkies/text-blinkies/q26.gif"> 
+ <img src="/images/blinkies/text-blinkies/q32.gif"> 
+ <img src="/images/blinkies/text-blinkies/x26.gif"> 
+ <img src="/images/blinkies/text-blinkies/y31.gif"> 
+ <img src="/images/blinkies/text-blinkies/8.gif"> 
+ <img src="/images/blinkies/text-blinkies/22.gif"> 
+ <img src="/images/blinkies/text-blinkies/20.gif"> 
+ <img src="/images/blinkies/text-blinkies/28.gif"> 
+ <img src="/images/blinkies/text-blinkies/44.gif"> 
+ <img src="/images/blinkies/text-blinkies/47.gif"> 
+ <img src="/images/blinkies/text-blinkies/57.gif"> 
+ <img src="/images/blinkies/text-blinkies/0172-rainbowequalizer.gif"> 
+ <img src="/images/blinkies/text-blinkies/0073-gay.gif"> 
+ <img src="/images/blinkies/text-blinkies/tumblr_6fcfe2072618af3d0ac50468a2a101e6_1f601163_400.gif"> 
+ <img src="/images/blinkies/text-blinkies/tumblr_0683c38caf126b1cbaebbd9d3969840f_3e3b3652_250.gif"> 
+ <img src="/images/blinkies/text-blinkies/tumblr_4d8a854464db0eda47c23488b0bb2522_f59fca89_500.gif"> 
+ <img src="/images/blinkies/text-blinkies/tumblr_c5325de445d7e31fbf45db316e6dfac7_ee0288ef_500.gif"> 
+ <img src="/images/blinkies/text-blinkies/tumblr_6b3ea2676b0e4ec0992b06f9b993402c_4e2a87cc_400.gif">  
+
+    </div>
+
+
+ <div style="width:100%; background: url(https://onemorestory.neocities.org/images/train_complete.gif)  no-repeat top center; height:215px; display:block"> </div>
+<abbr>Created Time 26.01.26 </abbr>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+<!-- region HTML -->
+  <style>
+.jukebox{
+  position: relative;
+  display: inline-block !important;   /* KRİTİK: satırı kaplamasın */
+  width: max-content;                  /* buton kadar olsun */
+  vertical-align: top;
+}
+
+.activate{
+  display: block;                      /* img boşluklarını öldürür */
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+
+.activate img{
+  display: block;                      /* 1px-2px saçma boşlukları bitirir */
+}
+
+.jukebox ul{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;                          /* radyonun bittiği yer */
+  margin: 0;                           /* UL default boşluklarını öldür */
+  padding: 0;
+  list-style: none;
+    background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 10px; 
+  width: auto;
+  min-width: max-content; /* İÇERİĞE GÖRE */
+  white-space: nowrap;    /* satır kırılmasın */
+  z-index:10;
+}
+
+.jukebox:hover ul,
+.jukebox:focus-within ul{
+  display: block;  z-index:10;
+}
+
+
+
+.jukebox ul button{
+  width: 100%;
+  line-height: 1;     /* ASIL OLAY */
+  padding: 2px;   /* daha da küçültmek istersen 2px */
+  margin: 0;
+  background: transparent;
+  color: #f2f2f2;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.jukebox ul button:hover{
+  background: rgba(255,255,255,0.1);
+}
+
+  
+  </style>
+  
+  <script>
+    var y = document.getElementsByTagName('audio');
+    for(var j=0; j<y.length; j++) {
+      y[j].onended = function() {
+        document.getElementById('marq').innerHTML = 'select a song!';};}
+  </script>    
+
+      
+  <script>
+  function stopmusic() {
+  	var y = document.getElementsByTagName('audio');
+  	for(var j=0; j<y.length; j++) {
+  		y[j].pause();}
+  	
+  	document.getElementById('marq').innerHTML = 'no music is playing';}
+  		
+  function playsong() {
+  	var y = document.getElementsByTagName('audio');
+  	for(var j=0; j<y.length; j++) {
+  		y[j].pause();}
+  	var songvalue = event.target.value;
+  	document.getElementsByTagName('audio')[songvalue].currentTime = 0;
+  	document.getElementsByTagName('audio')[songvalue].play();
+  	
+  	document.getElementById('marq').innerHTML = event.target.title;}
+</script>
+    <!-- region HTML -->
+
+
+
+
+ 
+
+
+
+
+
+</body>
+
+
+ 
+</html>
